@@ -1,0 +1,24 @@
+    <!-- <div class="wrapper">
+        <div class="container">
+            <h1 class="title">фильтр по временам года на чистом JavaScript </h1>
+                <ul class="list">
+                    <li class="list_item active" data-id="all">Bce</li>
+                    <li class="list_item" data-id="winter">3uma</li>
+                    <li class="list_item" data-id="spring">Becна</li>
+                    <li class="list_item" data-id="summer">ЛeTo</li>
+                    <li class="list_item" data-id="autumn">Oceнь</li>
+                </ul>
+            <div class="blocks">
+                <div class="blocks_row">
+                <div class="blocks_item summer summer1"> <span>ЛETO</span> </div>
+                <div class="blocks_item autumn autumn1"> <span>OCEHb</span> </div>
+                <div class="blocks_item winter winter1"> <span>3ИMA</span> </div>
+                <div class="blocks_item spring spring1"> <span>BECHA</span> </div>
+            </div>
+            <div class="blocks_row">
+                <div class="blocks_item winter winter2"> <span>3ИMA</span> </div>
+                <div class="blocks_item autumn autumn2"> <span>OCEHb</span> </div>
+                <div class="blocks_item summer summer2"> <span>ЛETO</span> </div>
+                <div class="blocks_item spring spring2"> <span>BECHA</span> </div>
+            </div>
+    </div> -->

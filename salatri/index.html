@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salatri</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/notmine.css">
+
+    <!-- <script src="script/script.js"></script> -->
+
+
+
+</head>
+
+
+<body>
+    <div class="menu">
+        <div class="container container__menu container_flex">
+            <p class="menu__logo">Salatri.</p>
+
+            <nav class="menu__nav">
+                <a href="#" class="menu__item">Home</a>
+                <a href="#" class="menu__item">About</a>
+                <a href="#" class="menu__item">Collection</a>
+                <a href="#" class="menu__item">Shop</a>
+                <a href="#" class="menu__item">Products</a>
+            </nav>
+
+            <img src="/img/burger.svg" alt="Image" class="menu-image none">
+
+            <button class="menu_button">Log in</button>
+
+            <script>
+                // создаём модальное окно
+                const modal = new ItcModal({
+                title: 'Заголовок',
+                content: '<div>Содержимое модального окна...</div>',
+                footerButtons: [
+                { class: 'btn btn-close', text: 'Закрыть', action: 'close' },
+    ]
+  });                // при клике по кнопке #show-modal
+                document.querySelector('#menu_button').addEventListener('click', () => {
+                  // откроем модальное окно
+                  modal.show();
+                });
+            </script>
+
+        </div>
+    </div>
+
+    <div class="section1">
+        <div class="section1__container container container-flex row">
+            <div class="section1__left">
+                <p class="section1__header header">
+                    Feel your home <br> with a modern <br> design space
+                </p>
+
+                <button class="menu_button">Discover</button>
+            </div>
+
+            <div class="section1_right">
+                <img src="/img/leaves.svg" alt="Image" class="section1__image image">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="info" id="tab">
+        <div class="info-title">More Value from <br> these Flowers </div>
+        <div class="info-header">
+            <!-- <div class="info-header-tab active">Special Deals</div>
+            <div class="info-header-tab">Popular</div>
+            <div class="info-header-tab">Recommendation</div>
+            <div class="info-header-tab">Best Price</div> -->
+            <div class="info-header-tab active">Home</div>
+            <div class="info-header-tab">Date</div>
+            <div class="info-header-tab">Wedding</div>
+            <div class="info-header-tab">Mom</div>
+        </div>
+
+
+        <div class="info-tabcontent fade">
+            <div class="photo">
+                <img src="img/jasmine.svg" alt="Massage" />
+            </div>
+            <div class="description">
+                <div class="description-title">Jasmine Flowers</div>
+                <div class="description-text">
+                    $258
+                </div>
+            </div>
+        </div>
+        <div class="info-tabcontent fade">
+            <div class="photo">
+                <img src="img/lily.svg" alt="Massage" />
+            </div>
+            <div class="description">
+                <div class="description-title">Lily Flowers</div>
+                <div class="description-text">
+                    $310
+                </div>
+            </div>
+        </div>
+        <div class="info-tabcontent fade">
+            <div class="photo">
+                <img src="img/rose.svg" alt="Massage" />
+            </div>
+            <div class="description">
+                <div class="description-title">Rose Flowers</div>
+                <div class="description-text">
+                    $114
+                </div>
+            </div>
+        </div>
+        <div class="info-tabcontent fade">
+            <div class="photo">
+                <img src="img/amar.svg" alt="Massage" />
+            </div>
+            <div class="description">
+                <div class="description-title">Amaryllis Flowers</div>
+                <div class="description-text">
+                    $410
+                </div>
+            </div>
+        </div>
+        <div class="sliderNew" id="slider">
+            <div class="wrap">
+                <div class="sliderNew-item fade">
+                    <img src="./img/house1.svg" alt="а" />
+                </div>
+                <div class="sliderNew-item fade">
+                    <img src="./img/house2.png" alt="а" />
+                </div>
+                <div class="sliderNew-item fade">
+                    <img src="./img/house3.svg" alt="а" />
+                </div>
+                <div class="sliderNew-item fade">
+                    <img src="./img/house4.svg" alt="а" />
+                </div>
+                <div class="prev">&lt;</div>
+                <div class="next">&gt;</div>
+            </div>
+            <div class="sliderNew-dots">
+                <div class="dot dot-active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sort">
+        <div class="container">
+            <div class="sort_nav">
+                <ul class="list">
+                    <li data-id="all" class="list_item active">All</li>
+                    <li data-id="deals" class="list_item">Special Deals</li>
+                    <li data-id="popular" class="list_item">Popular</li>
+                    <li data-id="recs" class="list_item">Recommendation</li>
+                    <li data-id="price" class="list_item">Best Price</li>
+                </ul>
+            </div>
+            <div class="blocks">
+                <div class="blocks_item deals">d</div>
+                <div class="blocks_item deals">d</div>
+                <div class="blocks_item popular">pp</div>
+                <div class="blocks_item popular">pp</div>
+                <div class="blocks_item recs">r</div>
+                <div class="blocks_item recs">r</div>
+                <div class="blocks_item price">p</div>
+                <div class="blocks_item price">p</div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <div class="footer">
+        <div class="container__footer row">
+            <div class="container__footer_left">
+                <div class="content_left container">
+                    <p class="menu__logo">Salatri.</p>
+                    <p class="footer__text inform">
+                        Start your day with the spirit of exercising and you will get many very important benefits
+                    </p>
+                    <!-- <div class="footer__icons">
+                        <img src="/img/facebook_logo.svg" alt="Image">
+                        <img src="/img/twitter_logo.svg" alt="Image">
+                        <img src="/img/instagram_logo.svg" alt="Image">
+                    </div> -->
+                </div>
+            </div>
+            <div class="container__footer_right container row">
+                <div>
+                    <button class="accordion">Product</button>
+                    <div class="panel">
+                        <a href="#" class="drop_button inform">About</a> <br/>
+                        <a href="#" class="drop_button inform">How it works</a> <br/>
+                        <a href="#" class="drop_button inform">Careers</a> <br/>
+                        <a href="#" class="drop_button inform">Blog</a> <br/>
+                        <a href="#" class="drop_button inform">Mobile</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="accordion">Support</button>
+                    <div class="panel">
+                        <a href="#" class="drop_button inform">Help</a> <br/>
+                        <a href="#" class="drop_button inform">Docs</a> <br/>
+                        <a href="#" class="drop_button inform">Guide</a> <br/>
+                        <a href="#" class="drop_button inform">Tutorial</a> <br/>
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="accordion">Services</button>
+                    <div class="panel">
+                        <a href="#" class="drop_button inform">About</a> <br/>
+                        <a href="#" class="drop_button inform">Submit</a> <br/>
+                        <a href="#" class="drop_button inform">Sup </a> <br/>
+                        <a href="#" class="drop_button inform">Comp</a> <br/>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <div class="cookies" id="cookies">
+            <div class="cookies__descr">
+                Пользуясь нашим сайтом, вы соглашаетесь с тем, что
+                <a class="cookies__link" href="#">мы используем cookies</a>
+            </div>
+            <div class="cookies__btn" id="cookies__btn">Окей</div>
+        </div>
+        
+
+        <script src="script/notmine.js"></script>
+
+        <script src="script/script.js"></script>
+        <script src="script/filter.js"></script>
+
+
+        <!-- <script src="script/modal_window.js"></script> -->
+
+</body>
+</html>
