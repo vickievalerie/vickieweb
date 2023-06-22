@@ -50,6 +50,8 @@ $bmg3-color: #D3D3D3;
 }
 
 body {
+    width:100%; height:100%; overflow-x:hidden;
+
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -353,10 +355,19 @@ body {
 
 }
 
+img.section1__content-right-image.image1 {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
 
 /* media */
 
 @media (max-width: 1400px) {
+    body {
+        padding: 0;
+    }
     .section0-1 {
         .section0-1__content{
             padding-top: 90px;
@@ -443,6 +454,10 @@ body {
 }
 
 @media (max-width: 856px) {
+    :root {
+        --container-padding: 0px;
+
+    }
     .section0-1 {
         .section0-1__content{
             padding-top: 90px;
@@ -611,6 +626,9 @@ body {
 
 
 @media (max-width:321px) {
+    .body {
+        width: 100%;
+    }
     .layout {
         min-height: 1625px
     }
