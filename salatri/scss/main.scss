@@ -89,6 +89,88 @@
 }
 
 
+
+//burger-menu 
+
+/* Гамбургер иконка */
+.menuu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    }
+
+.menuu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+
+.menuu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menuu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menuu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menuu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menuu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.menuu {
+	position: fixed;
+	width: 100%;
+	padding: 15px;
+    // background: #FFEFBA;
+    // background-color: #F4F7F8;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+    max-height: 100px;
+    display: flex;
+    row-gap: 10px;
+
+}
+
+.menuu__list {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        font-size: 14px; 
+}
+
+.menu__item {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menuu.active {
+	transform: translateX(0);
+}
+
+.menuu li {
+	list-style-type: none;
+}
+
+
+
+
+//section1
 .section1 {
     background-color: #F4F7F8;
 }
@@ -207,10 +289,10 @@
 }
 
 
-// .deals {
-//     // width: 20%;
-//     border: 3px solid #849A72;
-// }
+    // .deals {
+    //     // width: 20%;
+    //     border: 3px solid #849A72;
+    // }
 
 .blocks {
     display: flex;
@@ -264,7 +346,9 @@
 
 
 @media (max-width: 1025px) {
-
+    .menuu-btn {
+        display: block;
+    }
     .menu__burger {
         display: block;
         position: relative;
@@ -321,7 +405,8 @@
     }
 }
 
-@media (max-width: 920px) {
+
+@media (max-width: 970px) {
     .section1__left {
         margin: auto 0;
     }
@@ -329,12 +414,23 @@
     .header {
         font-size: 4vw;
     }
-    .section1__image {
-        max-width: 80%;
-        float: right;
+
+    .info-title{
+        font-size: 4vw;
     }
+    // .section1__image {
+    //     max-width: 80%;
+    //     float: right;
+    // }
 
 }
+
+@media (max-width: 770px) {
+    .section1__image {
+        width: 400px;
+    }
+}
+
 
 @media (max-width: 700px) {
     .menu__content {
