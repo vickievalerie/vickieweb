@@ -20,17 +20,22 @@
         <div class="container container__menu container_flex">
             <p class="menu__logo">Salatri.</p>
 
-            <nav class="menu__nav">
-                <a href="#" class="menu__item">Home</a>
-                <a href="#" class="menu__item">About</a>
-                <a href="#" class="menu__item">Collection</a>
-                <a href="#" class="menu__item">Shop</a>
-                <a href="#" class="menu__item">Products</a>
-            </nav>
+            <div class="menu__burger">
+                <span></span>
+            </div>
 
-            <img src="/img/burger.svg" alt="Image" class="menu-image none">
-
-            <button class="menu_button">Log in</button>
+            <div class="menu__content row">
+                <nav class="menu__nav">
+                    <a href="#" class="menu__item">Home</a>
+                    <a href="#" class="menu__item">About</a>
+                    <a href="#" class="menu__item">Collection</a>
+                    <a href="#" class="menu__item">Shop</a>
+                    <a href="#" class="menu__item">Products</a>
+                </nav>
+    
+                <button class="menu_button menu__button">Log in</button>
+            </div>
+            
 
             <script>
                 // создаём модальное окно
@@ -165,14 +170,30 @@
                 </ul>
             </div>
             <div class="blocks">
-                <div class="blocks_item deals">d</div>
-                <div class="blocks_item deals">d</div>
-                <div class="blocks_item popular">pp</div>
-                <div class="blocks_item popular">pp</div>
-                <div class="blocks_item recs">r</div>
-                <div class="blocks_item recs">r</div>
-                <div class="blocks_item price">p</div>
-                <div class="blocks_item price">p</div>
+                <div class="blocks_item deals">
+                    <img class="pot" src="img/pots/p1.webp" alt="">
+                </div>
+                <div class="blocks_item deals">
+                    <img class="pot" src="img/pots/p2.webp" alt="">
+                </div>
+                <div class="blocks_item popular">
+                    <img class="pot" src="img/pots/p3.webp" alt="">
+                </div>
+                <div class="blocks_item popular">
+                    <img class="pot" src="img/pots/p4.webp" alt="">
+                </div>
+                <div class="blocks_item recs">
+                    <img class="pot" src="img/pots/p5.webp" alt="">
+                </div>
+                <div class="blocks_item recs">
+                    <img class="pot" src="img/pots/p6.webp" alt="">
+                </div>
+                <div class="blocks_item price">
+                    <img class="pot" src="img/pots/p7.webp" alt="">
+                </div>
+                <div class="blocks_item price">
+                    <img class="pot" src="img/pots/p8.webp" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -247,9 +268,10 @@
         
 
         <script src="script/notmine.js"></script>
-
         <script src="script/script.js"></script>
         <script src="script/filter.js"></script>
+        <script src="script/burger.js"></script>
+
 
 
         <!-- <script src="script/modal_window.js"></script> -->

@@ -10,7 +10,7 @@
 }
 
 :root {
-    --container-width: 1440px;
+    --container-width: 100%;
     --container-padding: 3%;
 }
 
@@ -42,14 +42,16 @@
     color: #849A72;
 }
 
+.menu__content{
+    column-gap: 5%;
+}
+
 .menu {
+    background-color: #fff;
     .container__menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-
-
         .menu__nav {
             display: flex;
             align-items: center;
@@ -68,6 +70,10 @@
 
         .menu_button:hover {
             box-shadow:  #3d3d3d 0 0 5px;;
+        }
+
+        .menu__button {
+            min-width: 100px;
         }
 
 
@@ -89,11 +95,17 @@
 
 .section1__image {
     max-width: 500px;
+    // max-width: 80%;
+    height: auto;
+    display: block;
+
 }
 
 .header {
     font-weight: 500;
+    // font-size: 50px;
     font-size: 50px;
+
 }
 
 
@@ -181,25 +193,35 @@
 .blocks_item {
     // min-height: 100px;
     // min-width: 50px;
-    border: 3px solid #000;
-    border-radius: 4px;
-    box-shadow: 2px 3px 5px #292742;
+    // border: 3px solid #000;
+    // border-radius: 4px;
+    // box-shadow: 2px 3px 5px #292742;
     min-height: 140px;
     min-width: calc(22% - 28px);
     padding: 0 10px;
     margin: 15px;
-    border-width: 3px;
+    // border-width: 3px;
     float: left;
+    width: 20%;
+
 }
 
 
-.deals {
-    border: 3px solid #849A72;
-}
+// .deals {
+//     // width: 20%;
+//     border: 3px solid #849A72;
+// }
 
 .blocks {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+}
+
+.pot {
+    width: 100%;
+    box-shadow: 2px 3px 5px #292742;
+
 }
 
 /*модальное окно*/
@@ -237,8 +259,90 @@
 	color: #849A72;
 }
 
-@media (max-width: 1000px) {
-    .menu__image {
-        //сделать так чтобы оно появлялось
-        }
+
+// 
+
+
+@media (max-width: 1025px) {
+
+    .menu__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .menu__burger span{
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+    }
+    .menu__burger::before,
+    .menu__burger::after{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .menu__burger:before{
+        top: 0;
+    }
+    .menu__burger::after{
+        bottom: 0;
+    }
+
+    .menu__content {
+        background-color:#849A72;
+        position: fixed;
+        margin-top: 90px;
+        top: -100%;
+        left: 49%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .menu__content.active {
+        top: 1%;
+
+    }
+
+    .menu__button {
+        display: none;
+    }
+
+    .menu__nav {
+        margin: auto auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 920px) {
+    .section1__left {
+        margin: auto 0;
+    }
+
+    .header {
+        font-size: 4vw;
+    }
+    .section1__image {
+        max-width: 80%;
+        float: right;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .menu__content {
+        background-color:#849A72;
+        position: fixed;
+        top: 1%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
 }
